@@ -1,21 +1,20 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode } from '@fortawesome/free-brands-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faCode } from '@fortawesome/free-brands-svg-icons';
 import {
   DiJavascript1,
   DiReact,
   DiNodejs,
   DiMongodb,
   DiJava,
-  DiGit,
 } from "react-icons/di";
-import {
-  SiRedis,
-  SiPostgresql,
-} from "react-icons/si";
+// import {
+//   SiRedis,
+//   SiPostgresql,
+// } from "react-icons/si";
 
-function Techstack() {
+function Skills() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
@@ -52,4 +51,4 @@ function Techstack() {
   );
 }
 
-export default Techstack;
+export default Skills;
