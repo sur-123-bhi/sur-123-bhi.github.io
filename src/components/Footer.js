@@ -2,8 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -19,7 +17,7 @@ function Footer() {
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} SH</h3>
         </Col>
-        <Col md="4" className="footer-body">
+        <Col md="4" className="footer-body" style={{paddingLeft:"18%"}}>
           <ul className="footer-icons">
             <li className="social-icons">
               <a

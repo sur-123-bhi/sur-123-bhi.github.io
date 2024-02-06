@@ -1,7 +1,7 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCode } from '@fortawesome/free-brands-svg-icons';
+import { Col, Container, Row } from "react-bootstrap";
+import Particle from "./Particle";
+import Toolstack from './Toolstack.js';
 import {
   DiJavascript1,
   DiReact,
@@ -9,13 +9,17 @@ import {
   DiMongodb,
   DiJava,
 } from "react-icons/di";
-// import {
-//   SiRedis,
-//   SiPostgresql,
-// } from "react-icons/si";
+
 
 function Skills() {
   return (
+
+    <Container fluid className="about-section">
+      <Particle />
+      <Container>
+      <h1 className="project-heading">
+      Professional <strong className="purple">Skillset </strong>
+    </h1>
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
       <DiReact />
@@ -48,6 +52,13 @@ function Skills() {
       <h1 style={{marginTop: "15%", fontSize:"60px", fontWeight: "900"}}>C</h1>
       </Col>
     </Row>
+
+    <h1 className="project-heading">
+      <strong className="purple">Tools</strong> I use
+    </h1>
+    <Toolstack />
+      </Container>
+    </Container>
   );
 }
 

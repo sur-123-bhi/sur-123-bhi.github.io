@@ -20,15 +20,15 @@ function ResumeNew() {
       <Container fluid className="resume-section">
         <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
+        <Button
+          variant="primary"
+          href={pdf}
+          download="surbhi-resume.pdf" // Add this attribute to specify the filename
+          style={{ maxWidth: "250px" }}
+        >
+          <AiOutlineDownload />
+          &nbsp;Download CV
+        </Button>
         </Row>
 
         <Row className="resume">
@@ -38,15 +38,15 @@ function ResumeNew() {
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
+        <Button
+          variant="primary"
+          href={pdf}
+          download="surbhi-resume.pdf" // Add this attribute to specify the filename
+          style={{ maxWidth: "250px" }}
+        >
+          <AiOutlineDownload />
+          &nbsp;Download CV
+        </Button>
         </Row>
       </Container>
     </div>
