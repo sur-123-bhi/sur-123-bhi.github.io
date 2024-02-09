@@ -6,9 +6,9 @@ import FigmaProjectImg from "../../Assets/Figma-Design-Img.png";
 import TravelWebsiteImg from "../../Assets/Travel-Website-Img.png";
 import HospitalWebsiteImg from "../../Assets/Hospital-Website-Img.png";
 
-function Projects() {
+function Projects({forwardedRef}) {
   return (
-    <Container fluid className="project-section">
+    <Container fluid className="project-section" ref={forwardedRef}>
       <Particle />
       <Container>
         <h1 className="project-heading">

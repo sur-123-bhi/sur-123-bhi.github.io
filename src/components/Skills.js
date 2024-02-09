@@ -11,10 +11,10 @@ import {
 } from "react-icons/di";
 
 
-function Skills() {
+function Skills({forwardedRef}) {
   return (
 
-    <Container fluid className="about-section">
+    <Container fluid className="about-section" ref={forwardedRef}>
       <Particle />
       <Container>
       <h1 className="project-heading">

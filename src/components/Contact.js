@@ -3,10 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
-const Contact = () => {
+const Contact = ({forwardedRef}) => {
   return (
 
-    <Container fluid >
+    <Container fluid ref={forwardedRef} >
       <div style={{height:"30vh"}}></div>
       <Row>
         <Col md="12" className="contact-body" style={{color: "white", height: "61vh", fontSize:"150%"}}>

@@ -5,9 +5,9 @@ import Particle from "../Particle";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 
-function About() {
+function About({forwardedRef}) {
   return (
-    <Container fluid className="about-section">
+    <Container fluid className="about-section" ref={forwardedRef}>
       <Particle />
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>

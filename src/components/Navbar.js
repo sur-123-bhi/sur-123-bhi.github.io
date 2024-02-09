@@ -13,7 +13,7 @@ import { FaPhone } from 'react-icons/fa';
 
 import { CgFileDocument } from "react-icons/cg";
 
-function NavBar() {
+function NavBar({scrollToRef, homeRef, aboutRef, contactRef, skillsRef, resumeRef, projectsRef}) {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -51,7 +51,7 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+              <Nav.Link as={Link} to="/" onClick={() => scrollToRef(homeRef)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
@@ -60,7 +60,14 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/about"
-                onClick={() => updateExpanded(false)}
+                onClick={(event) => {
+                  event.preventDefault(); // Prevent default navigation behavior
+                  if (aboutRef.current) {
+                    scrollToRef(aboutRef); // Scroll to the About section
+                  } else {
+                    console.error("About ref is not initialized.");
+                  }
+                }}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
@@ -70,7 +77,7 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/skills"
-                onClick={() => updateExpanded(false)}
+                onClick={() => scrollToRef(skillsRef)}
               >
                 <AiFillStar style={{ marginBottom: "2px" }} /> Skills
               </Nav.Link>
@@ -80,7 +87,7 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/contact"
-                onClick={() => updateExpanded(false)}
+                onClick={() => scrollToRef(contactRef)}
               >
                 <FaPhone style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
@@ -90,7 +97,7 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/project"
-                onClick={() => updateExpanded(false)}
+                onClick={() => scrollToRef(projectsRef)}
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
@@ -103,32 +110,12 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/resume"
-                onClick={() => updateExpanded(false)}
+                onClick={() => scrollToRef(resumeRef)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
 
-            {/* <Nav.Item>
-              <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/soumyajit4419/Portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -137,3 +124,22 @@ function NavBar() {
 }
 
 export default NavBar;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
