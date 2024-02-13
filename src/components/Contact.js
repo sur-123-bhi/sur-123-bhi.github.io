@@ -20,7 +20,7 @@ const Contact = ({forwardedRef}) => {
                <strong>Email:</strong> <span style={{color: "#c770f0"}}>haldarsurbhi@gmail.com</span>
              </li>
              <li>
-               <strong>Phone:</strong> <span style={{color: "#c770f0"}}>91-8982691730</span>
+               <strong>Phone:</strong> <span style={{color: "#c770f0"}}>+91-8982691730</span>
              </li>
            </ul>
        
