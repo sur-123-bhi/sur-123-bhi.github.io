@@ -1,6 +1,8 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import Stack from 'react-bootstrap/Stack';
+import Badge from 'react-bootstrap/Badge';
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 
@@ -9,6 +11,12 @@ function ProjectCards(props) {
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
+      <Stack direction="horizontal" gap={2} style={{paddingBottom: "20px", justifyContent: "center",fontSize: "18px"}}>
+        {props.tag1 && <Badge bg="light" text="dark">{props.tag1}</Badge>}
+        {props.tag2 && <Badge bg="light" text="dark">{props.tag2}</Badge>}
+        {props.tag3 && <Badge bg="light" text="dark">{props.tag3}</Badge>}
+        {props.tag4 && <Badge bg="light" text="dark">{props.tag4}</Badge>}
+        </Stack> 
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}

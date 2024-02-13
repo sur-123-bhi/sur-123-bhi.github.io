@@ -5,15 +5,14 @@ import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import {
   AiFillStar,
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlineFundProjectionScreen,
 } from "react-icons/ai";
 import { FaPhone } from 'react-icons/fa';
 
 import { CgFileDocument } from "react-icons/cg";
 
-function NavBar({scrollToRef, homeRef, aboutRef, contactRef, skillsRef, resumeRef, projectsRef}) {
+function NavBar({scrollToRef, homeRef, contactRef, skillsRef, resumeRef, projectsRef}) {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -52,11 +51,11 @@ function NavBar({scrollToRef, homeRef, aboutRef, contactRef, skillsRef, resumeRe
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => scrollToRef(homeRef)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
                 to="/about"
@@ -71,7 +70,7 @@ function NavBar({scrollToRef, homeRef, aboutRef, contactRef, skillsRef, resumeRe
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
-            </Nav.Item>
+            </Nav.Item> */}
 
             <Nav.Item>
               <Nav.Link

@@ -2,7 +2,6 @@ import React, { useState,useRef, useEffect } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
-import About from "./components/About/About";
 import Contact from "./components/Contact";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects/Projects";
@@ -27,7 +26,7 @@ function App() {
   }, []);
 
   let homeRef = useRef(null);
-  let aboutRef = useRef(null);
+  // let aboutRef = useRef(null);
   let contactRef = useRef(null);
   let resumeRef = useRef(null);
   let projectsRef = useRef(null);
@@ -44,9 +43,9 @@ function App() {
     <Router>  
      <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar scrollToRef={scrollToRef} homeRef={homeRef} aboutRef={aboutRef} contactRef={contactRef} skillsRef={skillsRef} resumeRef={resumeRef} projectsRef={projectsRef}/>
+        <Navbar scrollToRef={scrollToRef} homeRef={homeRef} contactRef={contactRef} skillsRef={skillsRef} resumeRef={resumeRef} projectsRef={projectsRef}/>
           <Home forwardedRef={homeRef} />
-          <About forwardedRef={aboutRef} />
+          {/* <About forwardedRef={aboutRef} /> */}
           <Skills forwardedRef={skillsRef} />
           <Contact forwardedRef={contactRef} />
           <Projects forwardedRef={projectsRef} />

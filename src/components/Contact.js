@@ -11,7 +11,7 @@ const Contact = ({forwardedRef}) => {
       <Row>
         <Col md="12" className="contact-body" style={{color: "white", height: "61vh", fontSize:"150%"}}>
           
-        <h2 style={{fontSize:"200%", marginBottom:"3%", color: "#c770f0"}}>Contact Information</h2>
+        <h1 style={{fontSize:"200%", fontWeight:"900",  marginBottom:"3%", color: "#c770f0"}}>Contact Information</h1>
            <p>
              Feel free to reach out to me via email or phone. You can also find me on GitHub and LinkedIn.
            </p>
@@ -32,7 +32,7 @@ const Contact = ({forwardedRef}) => {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <AiFillGithub style={{padding:"10px", fontSize:"50px", color: "black", borderRadius:"10px", backgroundColor: "#c770f0"}}/>
+                <AiFillGithub style={{padding:"10px", fontSize:"50px", color: "black", borderRadius:"10px", backgroundColor: "white"}}/>
               </a>
             </li>
             <li className="social-icons">
@@ -42,7 +42,7 @@ const Contact = ({forwardedRef}) => {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <FaLinkedinIn style={{padding:"10px", fontSize:"50px", color: "black", borderRadius:"10px", backgroundColor: "#c770f0"}}/>
+                <FaLinkedinIn style={{padding:"10px", fontSize:"50px", color: "black", borderRadius:"10px", backgroundColor: "white"}}/>
               </a>
             </li>
           </ul>

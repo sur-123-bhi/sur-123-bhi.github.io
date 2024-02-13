@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/surbhi-resume.pdf";
+import pdf from "../../Assets/../Assets/surbhi-haldar-resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -23,7 +23,7 @@ function ResumeNew({forwardedRef}) {
         <Button
           variant="primary"
           href={pdf}
-          download="surbhi-resume.pdf" // Add this attribute to specify the filename
+          download="surbhi-haldar-resume.pdf" // Add this attribute to specify the filename
           style={{ maxWidth: "250px" }}
         >
           <AiOutlineDownload />
@@ -41,7 +41,7 @@ function ResumeNew({forwardedRef}) {
         <Button
           variant="primary"
           href={pdf}
-          download="surbhi-resume.pdf" // Add this attribute to specify the filename
+          download="surbhi-haldar-resume.pdf" // Add this attribute to specify the filename
           style={{ maxWidth: "250px" }}
         >
           <AiOutlineDownload />
