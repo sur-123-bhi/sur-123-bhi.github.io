@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0df1631b.css",
-    "main.js": "/static/js/main.0c3fc07a.js",
+    "main.css": "/static/css/main.8fb2d696.css",
+    "main.js": "/static/js/main.a5b16e1c.js",
     "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/Hospital-Website-Img.png": "/static/media/Hospital-Website-Img.4747c1f306f7f5977e5e.png",
@@ -10,15 +10,15 @@
     "static/media/surbhi-haldar-resume.pdf": "/static/media/surbhi-haldar-resume.deff99836646dc14f16c.pdf",
     "static/media/surbhi-profile-photo.jpg": "/static/media/surbhi-profile-photo.1d32bb551daaf5fdb903.jpg",
     "static/media/home-bg.jpg": "/static/media/home-bg.dc52d5d40a40b13154b0.jpg",
-    "static/media/pre.svg": "/static/media/pre.4410c5baaa673cc131da.svg",
+    "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/index.html",
-    "main.0df1631b.css.map": "/static/css/main.0df1631b.css.map",
-    "main.0c3fc07a.js.map": "/static/js/main.0c3fc07a.js.map",
+    "main.8fb2d696.css.map": "/static/css/main.8fb2d696.css.map",
+    "main.a5b16e1c.js.map": "/static/js/main.a5b16e1c.js.map",
     "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0df1631b.css",
-    "static/js/main.0c3fc07a.js"
+    "static/css/main.8fb2d696.css",
+    "static/js/main.a5b16e1c.js"
   ]
 }
