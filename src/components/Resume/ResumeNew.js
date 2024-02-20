@@ -44,8 +44,9 @@ function ResumeNew({ forwardedRef }) {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={pdf}
-            download="surbhi-haldar-resume.pdf" // Add this attribute to specify the filename
+            href='https://drive.google.com/file/d/1CQ0cD4DQ5V8lnThldwF2LlIVXpuAOloU/view?usp=sharing'
+            target="_blank"
+            // download="surbhi-haldar-resume.pdf" // Add this attribute to specify the filename
             style={{ maxWidth: "250px" }}
           >
             <AiOutlineDownload />

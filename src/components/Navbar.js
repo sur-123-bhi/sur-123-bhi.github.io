@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
+import { Container } from "react-bootstrap";
 import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import {
   AiFillStar,
@@ -12,7 +12,7 @@ import { FaPhone } from 'react-icons/fa';
 
 import { CgFileDocument } from "react-icons/cg";
 
-function NavBar({scrollToRef, homeRef, contactRef, skillsRef, resumeRef, projectsRef}) {
+function NavBar({ scrollToRef, homeRef, contactRef, skillsRef, resumeRef, projectsRef }) {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
@@ -35,7 +35,7 @@ function NavBar({scrollToRef, homeRef, contactRef, skillsRef, resumeRef, project
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <h1 style={{letterSpacing: "3px", fontWeight: "900", color: "#c770f0", marginTop: "5px"}}>SH</h1>
+          <h1 style={{ letterSpacing: "3px", fontWeight: "900", color: "#c770f0", marginTop: "5px" }}>SH</h1>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -105,15 +105,25 @@ function NavBar({scrollToRef, homeRef, contactRef, skillsRef, resumeRef, project
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            {/* <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/resume"
-                onClick={() => scrollToRef(resumeRef)}
+                to="/file/d/1CQ0cD4DQ5V8lnThldwF2LlIVXpuAOloU/view?usp=sharing"
+              // onClick={() => scrollToRef(resumeRef)}
+              >
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+              </Nav.Link>
+            </Nav.Item> */}
+
+            <Nav.Item>
+              <Nav.Link
+                href="https://drive.google.com/file/d/1CQ0cD4DQ5V8lnThldwF2LlIVXpuAOloU/view?usp=sharing"
+                target="_blank"
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
+
 
           </Nav>
         </Navbar.Collapse>
