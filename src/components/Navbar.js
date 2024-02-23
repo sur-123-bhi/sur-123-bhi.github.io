@@ -117,7 +117,7 @@ function NavBar({ scrollToRef, homeRef, contactRef, skillsRef, resumeRef, projec
 
             <Nav.Item>
               <Nav.Link
-                href="https://drive.google.com/file/d/1CQ0cD4DQ5V8lnThldwF2LlIVXpuAOloU/view?usp=sharing"
+                href="https://drive.google.com/file/d/10wXWroxqTdx4dSzbTu4L7GRcBEJFdFJc/view?usp=sharing"
                 target="_blank"
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
